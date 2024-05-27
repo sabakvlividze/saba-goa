@@ -1,40 +1,62 @@
-#1)
-def numbers (start,end):
-    for i in range (start,end):
-        print(i)
+#1) 
+def sum_of_evens(numbers_list):
+    sum = 0
+    for index in range(len(numbers_list)):
+        if index % 2 == 0:
+            sum += numbers_list[index]
+    return sum
 
-numbers(1,5)
-numbers(6,10)
+print(sum_of_evens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))       
+        
+
 
 #2)
-
-def calculate_sum (start,end):
-    result = 0
-    for i in range (start,end):
-        result = result + i
-    print(result)
-
-calculate_sum(2,5)
+def check_int(num):
+    if num % 2 == 0:
+        return str(num) + " is Even"
+    else:
+        return str(num) + " is Odd"
 
 
+print(check_int(6))
 
 #3)
-
-def calculate_arithmetic(start, end):
-    numbers = []
-
-    for i in range(start, end):
-        numbers.append(i)
+def check_if_prime(num):
+    if num == 2:
+        return str(num) + " is prime"
+    if num <= 1:
+        return str(num) + " is invalid number"
     
-    result = sum(numbers) / len(numbers)
+    count = 2
+    
+    for i in range(2, num):
+        if num % i == 0:
+            count = count + 1
+        if count > 2:
+            return str(num) + ' is not prime'
+    
+    return str(num) + ' is prime'
 
-    print(result)
-
-calculate_arithmetic(5, 11)
+print(check_if_prime(5))
 
 #4)
+def capitalize_names(names_list):
+    formated_list = []
+    for name in names_list:
+        formated_list.append(name.capitalize())
+    return formated_list
 
-def print_char (name, index):
-    print(name[index])
+print(capitalize_names(["david", "chad", "gigachad"]))
 
-print_char("saba",2)
+#5)
+def separate_evens_odds(numbers):
+    result = []
+    for number in numbers:
+        if number % 2 == 0:
+            result.append(number // 2)
+        else:
+            result.append(number * 2)
+    return result
+
+
+print(separate_evens_odds([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
