@@ -1,0 +1,20 @@
+body {
+    background-image: url(imagee.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.parent {
+    padding:0;
+    margin: 2px;
+    border: 10px;
+    border-color: red;
+}
+.child {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+
+}

@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+        <title>Contact Us</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .parent {
+                width: 1000px;
+                height: 1000px;
+                border: 5px solid red;
+            }
+
+            .child-1 {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: brown;
+                z-index: 2;
+                left: 55%;
+
+            }
+
+            .child-2 {
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                background-color: darkgreen;
+                z-index: 1;
+                top: 40%;
+            }
+
+            .child-3 {
+                position: absolute;
+                width: 800px;
+                height: 800px;
+                background-color: lightblue;
+                z-index: 0;
+               
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="parent">
+            <div class="child child-1">1</div>
+            <div class="child child-2">2</div>
+            <div class="child child-3">3</div>
+        </div>
+    </body>
+
+</html>
