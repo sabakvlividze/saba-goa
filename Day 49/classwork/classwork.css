@@ -1,0 +1,30 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    
+    background-color:yellow;
+    width:200px;
+    height:200px;
+    transition:ease 0.75s;
+}
+div:hover {
+    background-color: red;
+    width:250px;
+    height:275px;
+    transform:scale();
+    transform:rotate(100deg);
+    transform: skew(-10deg);
+    
+
+
+
+    
+}

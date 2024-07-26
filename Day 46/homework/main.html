@@ -2,33 +2,79 @@
     <head>
         <title>Saba Kvlividze</title>
         <style>
+            header {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
             .intro_p {
                 font-weight: bold;
                 font-style: italic;
             }
             #my_photo {
                 width: 200px;
-                height:200px;
+                height: 200px;
             }
             .parent {
                 position: relative;
             }
             .child {
-                position: absolute;
+                
                 bottom: 0;
                 right: 30%;
 
             }
             .links {
-                position: absolute;
+                
                 display: flex;
-                align-items: flex-start;
+                justify-content: space-around;
+                text-align: center;
+                margin-top: 10px;
+                position: fixed;
             }
+            #main_div {
+                max-width: 100%;
+                max-height: 500px;
+                background-color: black;
+                color:white;
+                transition: 0.5s;
+                
+                  
+            }
+            #main_div:hover {
+                color:white;
+                background-color: green;
+            }
+
+            #flex_div {
+                display: flex;
+                justify-content: space-around;
+                
+            }
+            a {
+                text-decoration: none;
+                color:white
+            }
+            a:hover {
+                color:red;
+            }
+
         </style>
     </head>
     <body>
-        <div class="parent2">
-        <div class="parent1">
+        <header>
+            <div id="main_div">
+                <div id="flex_div"> 
+                    <a href="home.html">Home</a> 
+                    <a href="about_us.html">About us</a>
+                    <a href="Contact_us">Contact us</a> 
+                    <a href="sign_in.html">Sign in</a>
+                </div> 
+        
+            </div>
+            <div class="parent2">
+            <div class="parent1">
+        </header>
             <h1>Saba</h1>
             <h2>Kvlividze</h2>
             <h3>GOA</h3>
@@ -36,7 +82,15 @@
             <h5>html</h5>
             <h6>css</h6>
 
-        
+            <form>
+                <br> <input type="text" placeholder="Enter full name" required>
+                <br> <input type="number" placeholder="Enter ID number" required>
+                <br> <input type="email" placeholder="Enter email" required>
+                <br> <input type="number" placeholder="Enter mobile number" required>
+                <br> <input type="text" placeholder="Send us a message">
+                
+                <br> <button>submit</button>
+             </form>
 
             <p class="intro_p">
             I am saba kvlivdze and I study at GOA.
@@ -51,12 +105,7 @@
                 <li>this is saba</li>
                 <li>goa is nice</li>  
             </ol>
-        <div class="child2">  
-            <a class="links" href="home.html">Home</a> 
-            <a class="links" href="about_us.html">About us</a>
-            <a class="links" href="Contact_us">Contact us</a> 
-            <a class="links" href="sign_in.html">Sign in</a>
-        </div>
+     
     
         <div>
         <div>
